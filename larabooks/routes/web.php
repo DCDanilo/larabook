@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('books', BookController::class )->only('index', 'create', 'store', 'edit', 'update');
+Route::resource('books', BookController::class )->only('index', 'create', 'store', 'edit', 'update','destroy');

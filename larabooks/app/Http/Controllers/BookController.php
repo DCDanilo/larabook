@@ -80,8 +80,10 @@ class BookController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Book $book)
+    public function destroy(Book $book): RedirectResponse
     {
+        $book->delete();
+        return redirect(route('books.index'));
         
     }
 }

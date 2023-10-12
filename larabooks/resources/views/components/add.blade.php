@@ -16,7 +16,7 @@
     </div>
 
     <div class="mb-3">
-        <label for="publ_year" class="form-label">Titolo</label>
+        <label for="publ_year" class="form-label">Anno di pubblicazione</label>
         <input type="text" class="form-control" id="publ_year" aria-describedby="bookPublication" name="publ_year" value="{{old('publ_year')}}">
     </div>
 
